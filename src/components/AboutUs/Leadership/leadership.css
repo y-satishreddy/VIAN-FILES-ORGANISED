@@ -1,0 +1,25 @@
+/* Place pagination below the content */
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Style bullets */
+.swiper-pagination-bullet {
+  background-color: #f97316; /* orange */
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  background-color: #f97316;
+  opacity: 1;
+}
+
+/* Prevent overlapping during fade */
+.swiper-slide {
+  opacity: 0 !important;
+  transition: opacity 1s ease-in-out;
+}
+.swiper-slide-active {
+  opacity: 1 !important;
+}
