@@ -1,31 +1,52 @@
+import React, { useRef, useEffect, useState } from "react";
 import BannerVideoMobile from "../../assets/home/bannerMobileVideo.mp4";
 import BannerVideoDesktop from "../../assets/home/bannerVideo.mp4";
 import PosterImage from "../../assets/home/poster.png";
 import Navbar from "../Navbar/Navabar";
+
 const Banner = () => {
+  const videoRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener("resize", handleResize);
+
+    // Play video on mount
+    const video = videoRef.current;
+    if (video) {
+      video.muted = true; // required for Safari
+      video.play().catch((err) => {
+        console.log("Autoplay prevented:", err);
+      });
+    }
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const videoSrc = isMobile ? BannerVideoMobile : BannerVideoDesktop;
+
   return (
     <section className="relative w-full h-[93vh] md:h-screen bg-[#f0f0f0] overflow-hidden">
       <div className="relative w-full h-full px-5 md:px-10">
+        {/* Conditional video element */}
         <video
-          className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+          key={videoSrc} // key ensures React re-renders the element when src changes
+          ref={videoRef}
+          src={videoSrc}
           autoPlay
           muted
-          loop
           playsInline
+          loop
+          preload="auto"
           poster={PosterImage}
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         >
-          <source
-            src={BannerVideoDesktop}
-            type="video/mp4"
-            media="(min-width: 768px)"
-          />
-          <source
-            src={BannerVideoMobile}
-            type="video/mp4"
-            media="(max-width: 767px)"
-          />
           Your browser does not support the video tag.
         </video>
+
         <div className="absolute inset-0 flex flex-col justify-between">
           <div className="w-full z-50">
             <Navbar />

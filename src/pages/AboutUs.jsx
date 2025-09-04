@@ -8,9 +8,9 @@ const AboutUs = () => {
   return (
     <>
       <SEO
-        title="VIAN PROPERTIES | About Us"
-        description="Welcome to VIAN - Explore our premium projects and services."
-        keywords="VIAN, real estate, projects, home"
+        title="About Vian Infra | Passionate, Sustainable Real Estate"
+        description="Discover Vian Infra – where passion meets purpose. We build premium, sustainable spaces that foster community, trust, and excellence in real estate."
+        keywords="Vian Infra, real estate development, sustainable real estate, luxury realty, eco-friendly construction, niche spaces, premium lifestyle projects, real estate Andhra Pradesh, real estate Telangana, visionary leadership, quality real estate, infrastructure development"
       />
       <Banner />
       <VisionMission />

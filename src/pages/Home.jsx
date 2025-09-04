@@ -7,11 +7,10 @@ import SEO from "../components/RouteWithSEO";
 const Home = () => {
   return (
     <section className="bg-color-white">
-      {" "}
       <SEO
-        title="VIAN PROPERTIES | Home"
-        description="Welcome to VIAN - Explore our premium projects and services."
-        keywords="VIAN, real estate, projects, home"
+        title="Vian Properties Hyderabad | Luxury Real Estate & Premium Apartments"
+        description="Discover Vian Properties – redefining luxury living in Hyderabad with thoughtfully designed premium apartments. Ideal for homeowners and investors seeking comfort, style, and long-term value."
+        keywords="Vian Properties, luxury apartments Hyderabad, premium real estate Hyderabad, Vian VILVA, Vian VAYU, Vian Valley, Hyderabad property investment, ongoing projects Hyderabad, future real estate projects, trusted builders Hyderabad."
       />
       <Banner />
       <ExploreNow />

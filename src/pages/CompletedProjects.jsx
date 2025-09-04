@@ -10,9 +10,9 @@ const CompletedProjects = () => {
   return (
     <div className="relative ">
       <SEO
-        title="VIAN PROPERTIES | Completed Projects"
-        description="Welcome to VIAN - Explore our premium projects and services."
-        keywords="VIAN, real estate, projects, home"
+        title="Vian Properties | HMDA-Approved Townships in Shabad – Vian Valley & Vian Central"
+        description="Discover Vian Properties’ completed HMDA-approved projects in Shabad, Telangana – Vian Valley Phase I & II and Vian Central. Explore 100+ acres of integrated township living with premium amenities including a clubhouse, swimming pool, fitness center, and more."
+        keywords="Vian Properties, HMDA Approved Projects, Vian Valley, Vian Central, Integrated Township Shabad, Real Estate Shabad Telangana, Vian Valley Phase I, Vian Valley Phase II, Gated Communities Shabad, Land for Sale Shabad, Hyderabad Real Estate, Township Projects Telangana"
       />
       <div className="fixed top-[20%] right-[5%]  xl:right-[10%] 2xl:right-[25%] w-40 h-auto z-20 max-w-2xl hidden md:block">
         <img src={MyImage} alt="Floating" className="w-full h-auto" />

@@ -43,21 +43,24 @@ const Footer = () => {
         <div className="opacity-80 text-white space-y-1">
           <p className="text-white margin-bottom-0">
             © 2025 Vianproperties |
-            <Link to="/privacy" className="ml-1 inline-block">
+            <Link
+              to="/privacy"
+              className="ml-1 inline-block hover:text-[orange]"
+            >
               Privacy
             </Link>
             {" | "}
-            <Link to="/terms" className="ml-1 inline-block">
+            <Link to="/terms" className="ml-1 inline-block hover:text-[orange]">
               Terms of Use
             </Link>
           </p>
-          <p className="text-white">
+          <p className="text-white ">
             Designed and Developed by{" "}
             <a
               href="https://whitethoughts.in/"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-1 inline-block"
+              className="ml-1 inline-block hover:text-[orange]"
             >
               White Thoughts & Branding
             </a>

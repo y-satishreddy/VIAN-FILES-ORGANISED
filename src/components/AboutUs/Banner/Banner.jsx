@@ -14,4 +14,5 @@ const Banner = () => {
     </section>
   );
 };
+
 export default Banner;

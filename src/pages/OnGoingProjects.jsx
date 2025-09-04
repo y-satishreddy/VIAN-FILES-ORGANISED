@@ -6,11 +6,10 @@ import SEO from "../components/RouteWithSEO";
 const OnGoingProjects = () => {
   return (
     <>
-      {" "}
       <SEO
-        title="VIAN PROPERTIES | On Going Projects"
-        description="Welcome to VIAN - Explore our premium projects and services."
-        keywords="VIAN, real estate, projects, home"
+        title="Vian Mrida - 2 & 3 BHK Luxury Apartments in Kolluru | Vian Properties"
+        description="Discover Vian Mrida – Premium 2 & 3 BHK flats in Kolluru, Hyderabad. Spread over 2.62 acres with G+32 iconic tower, rooftop infinity pool, 40,000 sft clubhouse, 270° views, and Vaastu-compliant design. Book your dream home today!"
+        keywords="Vian Mrida, Kolluru apartments, 2 BHK flats Kolluru, 3 BHK flats Hyderabad, luxury apartments Hyderabad, Vian Properties, premium flats Kolluru, G+32 tower Hyderabad, Vaastu apartments Hyderabad"
       />
       <Banner />
       <Content />
