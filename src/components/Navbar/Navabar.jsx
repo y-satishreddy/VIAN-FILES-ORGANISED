@@ -23,7 +23,7 @@ const Navbar = () => {
           <NavLink to="/" onClick={() => setIsOpen(false)}>
             <img src={Logo} alt="logo" className="h-10 sm:h-12 md:h-14 block" />
           </NavLink>
-          <div className="hidden md:flex text-sm font-medium text-gray-700">
+          <div className="hidden md:flex text-sm font-medium text-color-gray">
             {[
               { name: "HOME", path: "/" },
               { name: "ABOUT US", path: "/about" },
@@ -65,7 +65,7 @@ const Navbar = () => {
           </button>
         </div>
         {isOpen && (
-          <div className="md:hidden bg-white shadow-lg fixed top-[70px] left-0 w-full z-1000">
+          <div className="md:hidden bg-white shadow-lg fixed top-[70px] left-0 w-full z-1000 text-color-gray">
             {[
               { name: "HOME", path: "/" },
               { name: "ABOUT US", path: "/about" },

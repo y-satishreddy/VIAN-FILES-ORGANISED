@@ -15,13 +15,13 @@ const RouteWithSEO = ({ title, description, keywords }) => {
     }
     if (keywords) {
       let keywordsTag = document.querySelector("meta[name='keywords']");
-      console.log(keywords);
+
       if (!keywordsTag) {
         keywordsTag = document.createElement("meta");
         keywordsTag.name = "keywords";
         document.head.appendChild(keywordsTag);
       }
-      console.log(keywords);
+
       keywordsTag.content = keywords;
     }
   }, [location.pathname, title, description, keywords]);
