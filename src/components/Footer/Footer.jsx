@@ -80,7 +80,7 @@ const Footer = () => {
             Privacy
           </Link>
           {" | "}
-          <Link to="/terms-of-use" className=" transition-colors duration-300">
+          <Link to="/terms" className=" transition-colors duration-300">
             Terms of Use
           </Link>
           <br />

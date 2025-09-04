@@ -1,13 +1,11 @@
-import Navbar from "../Navbar/Navabar"; // Adjust the path as needed
+import Navbar from "../Navbar/Navabar";
 import OnGoingProjectsBanner from "../../assets/onGoingProjectsBanner.png";
-
-export default function VianValley() {
+const Banner = () => {
   return (
     <div className="relative flex flex-col bg-[#F0F0F0] pb-[20px] md:pb-[40px]">
       <div className="w-full z-50">
         <Navbar />
       </div>
-
       <section className="w-full flex justify-center px-5 md:px-10 pt-0 md:pt-0">
         <div className="w-full max-w-7xl mx-auto flex flex-col items-center md:items-start">
           <div className="w-full">
@@ -25,4 +23,5 @@ export default function VianValley() {
       </section>
     </div>
   );
-}
+};
+export default Banner;

@@ -1,12 +1,16 @@
-import React from "react";
-import Navbar from "../components/Navbar/Navabar";
 import Footer from "../components/Footer/Footer";
-
+import Navbar from "../components/Navbar/Navabar";
+import SEO from "../components/RouteWithSEO";
 const Privacy = () => {
   return (
     <section className="w-full">
+      {" "}
+      <SEO
+        title="VIAN PROPERTIES | Privacy"
+        description="Welcome to VIAN - Explore our premium projects and services."
+        keywords="VIAN, real estate, projects, home"
+      />
       <Navbar />
-
       {/* Banner Section */}
       <div className="w-full bg-gray-color to-orange-400 py-[50px] md:py-[80px] px-5 md:px-10">
         <div className="max-w-7xl mx-auto text-start">
@@ -16,7 +20,6 @@ const Privacy = () => {
           </p>
         </div>
       </div>
-
       <div className="w-full bg-white py-[50px] md:py-[80px] px-5 md:px-10">
         <div className="max-w-7xl mx-auto space-y-10 text-start">
           <div>
@@ -68,7 +71,6 @@ const Privacy = () => {
           </div>
         </div>
       </div>
-
       <Footer />
     </section>
   );

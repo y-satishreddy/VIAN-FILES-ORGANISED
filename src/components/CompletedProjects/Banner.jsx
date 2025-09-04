@@ -1,6 +1,6 @@
 import Navbar from "../Navbar/Navabar";
 import VianValleyImage from "../../assets/vianValleyBanner.png";
-export default function VianValley() {
+const Banner = () => {
   return (
     <div className="relative flex flex-col bg-[#F0F0F0] pb-[20px] md:pb-[40px]">
       <div className="w-full z-50">
@@ -22,4 +22,5 @@ export default function VianValley() {
       </section>
     </div>
   );
-}
+};
+export default Banner;

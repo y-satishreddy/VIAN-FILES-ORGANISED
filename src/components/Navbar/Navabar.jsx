@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`w-full fixed top-0 left-0 z-50 h-[90px] transition-all duration-300 px-5 md:px-10 py-4 ${
+        className={`w-full fixed top-0 left-0 z-50 h-[70px] transition-all duration-300 px-5 md:px-10 py-4 ${
           scrolled ? "bg-white shadow-md" : "bg-transparent"
         }`}
       >
@@ -30,7 +30,7 @@ const Navbar = () => {
               { name: "COMPLETED PROJECTS", path: "/completed-projects" },
               { name: "ON-GOING PROJECTS", path: "/ongoing-projects" },
               { name: "FUTURE PROJECTS", path: "/future-projects" },
-              { name: "CONTACT US", path: "/contact" },
+              { name: "CONTACT US", path: "/contact-us" },
             ].map((link) => (
               <NavLink
                 key={link.name}
@@ -72,7 +72,7 @@ const Navbar = () => {
               { name: "COMPLETED PROJECTS", path: "/completed-projects" },
               { name: "ON-GOING PROJECTS", path: "/ongoing-projects" },
               { name: "FUTURE PROJECTS", path: "/future-projects" },
-              { name: "CONTACT US", path: "/contact" },
+              { name: "CONTACT US", path: "/contact-us" },
             ].map((link, idx) => (
               <NavLink
                 key={link.name}

@@ -1,4 +1,4 @@
-export default function Values() {
+const Values = () => {
   return (
     <section className="w-full bg-white px-5 md:px-10 lg:px-12 pb-[50px] md:pb-[80px] pt-[0px]">
       <div className="max-w-7xl mx-auto">
@@ -66,4 +66,5 @@ export default function Values() {
       </div>
     </section>
   );
-}
+};
+export default Values;

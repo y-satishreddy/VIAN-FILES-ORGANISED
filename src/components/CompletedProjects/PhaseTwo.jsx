@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-export default function VianCentral() {
+const PhaseTwo = () => {
   return (
     <div className="bg-white flex justify-center  md:px-10 px-5">
       <div className="w-full max-w-7xl h-[400px] flex items-center mx-auto">
@@ -14,7 +14,7 @@ export default function VianCentral() {
           </p>
           <br />
           <Link
-            to="/explore"
+            to="/completed-projects"
             className="inline-block px-8 py-1 border-2 border-[#f37820] text-[#f37820] text-sm md:text-base transition-colors duration-300 bg-orange-red-gradient hover:text-white w-fit"
           >
             Explore Now
@@ -23,4 +23,5 @@ export default function VianCentral() {
       </div>
     </div>
   );
-}
+};
+export default PhaseTwo;

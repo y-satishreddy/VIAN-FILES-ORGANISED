@@ -22,8 +22,8 @@ function App() {
         ></Route>
         <Route path="/ongoing-projects" element={<OnGoingProjects />}></Route>
         <Route path="/future-projects" element={<FutureProjects />}></Route>
-        <Route path="/contact" element={<ContactUs />}></Route>
-        <Route path="/terms-of-use" element={<TermsOfUse />}></Route>
+        <Route path="/contact-us" element={<ContactUs />}></Route>
+        <Route path="/terms" element={<TermsOfUse />}></Route>
         <Route path="/privacy" element={<Privacy />}></Route>
       </Routes>
     </>

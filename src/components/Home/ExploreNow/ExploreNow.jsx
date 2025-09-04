@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import BgImage from "../../../assets/home/bgExploreNow.jpg";
 import ExploreImage from "../../../assets/home/building.png";
-
 const ExploreNow = () => {
   return (
     <section
@@ -31,7 +30,7 @@ const ExploreNow = () => {
             Properties is where future-ready living begins.
           </p>
           <Link
-            to="/explore"
+            to="/"
             className="inline-block px-8 py-1 border-2 border-[#f37820] text-[#f37820] text-sm md:text-base transition-colors duration-300 bg-orange-red-gradient hover:text-white w-fit"
           >
             Explore Now
@@ -48,5 +47,4 @@ const ExploreNow = () => {
     </section>
   );
 };
-
 export default ExploreNow;

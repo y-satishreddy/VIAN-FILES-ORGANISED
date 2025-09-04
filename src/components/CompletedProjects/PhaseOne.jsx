@@ -1,4 +1,4 @@
-export default function VianValleyPhase1() {
+const PhaseOne = () => {
   return (
     <div className="bg-white flex justify-center  md:px-10 px-5">
       <div className="w-full max-w-7xl h-[350px] md:h-[400px] lg:h-[400px] flex items-center mx-auto">
@@ -21,4 +21,5 @@ export default function VianValleyPhase1() {
       </div>
     </div>
   );
-}
+};
+export default PhaseOne;

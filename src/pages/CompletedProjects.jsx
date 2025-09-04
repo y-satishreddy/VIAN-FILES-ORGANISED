@@ -5,10 +5,15 @@ import VianCentral from "../components/CompletedProjects/VianCentral";
 import PhaseTwo from "../components/CompletedProjects/PhaseTwo";
 import Footer from "../components/Footer/Footer";
 import MyImage from "../assets/valley.png";
-
+import SEO from "../components/RouteWithSEO";
 const CompletedProjects = () => {
   return (
     <div className="relative ">
+      <SEO
+        title="VIAN PROPERTIES | Completed Projects"
+        description="Welcome to VIAN - Explore our premium projects and services."
+        keywords="VIAN, real estate, projects, home"
+      />
       <div className="fixed top-[20%] right-[5%]  xl:right-[10%] 2xl:right-[25%] w-40 h-auto z-20 max-w-2xl hidden md:block">
         <img src={MyImage} alt="Floating" className="w-full h-auto" />
       </div>

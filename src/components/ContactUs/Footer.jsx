@@ -47,7 +47,7 @@ const Footer = () => {
               Privacy
             </Link>
             {" | "}
-            <Link to="/terms-of-use" className="ml-1 inline-block">
+            <Link to="/terms" className="ml-1 inline-block">
               Terms of Use
             </Link>
           </p>

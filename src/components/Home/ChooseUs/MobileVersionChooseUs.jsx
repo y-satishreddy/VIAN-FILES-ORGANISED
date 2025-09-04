@@ -3,7 +3,7 @@ import DocumentationImg from "../../../assets/home/whyChooseUs/documentation.svg
 import LegacyImg from "../../../assets/home/whyChooseUs/emerging.svg";
 import QualityImg from "../../../assets/home/whyChooseUs/quality.svg";
 import TrustImg from "../../../assets/home/whyChooseUs/trust.svg";
-const WhyChooseUsMobile = () => {
+const MobileVersionWhyChooseUs = () => {
   const features = [
     {
       img: TrustImg,
@@ -73,4 +73,4 @@ const WhyChooseUsMobile = () => {
   );
 };
 
-export default WhyChooseUsMobile;
+export default MobileVersionWhyChooseUs;

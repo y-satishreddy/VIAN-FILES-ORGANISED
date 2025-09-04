@@ -1,13 +1,11 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-import { Pagination, Autoplay, EffectFade } from "swiper/modules";
-import "./leadership.css";
+import "swiper/css/pagination";
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import LeadershipImage from "../../../assets/aboutUs/leadership.png";
-
-export default function LeadershipCarousel() {
+import "./leadership.css";
+const Leadership = () => {
   const leaders = [
     {
       name: "Sai Saravana",
@@ -83,4 +81,5 @@ export default function LeadershipCarousel() {
       </div>
     </section>
   );
-}
+};
+export default Leadership;

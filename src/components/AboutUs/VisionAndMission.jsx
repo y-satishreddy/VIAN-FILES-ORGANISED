@@ -1,5 +1,5 @@
 import Infinity from "../../assets/home/milestone.svg";
-export default function VisionMission() {
+const VisionAndMission = () => {
   return (
     <section className="w-full bg-white px-5 md:px-10 lg:px-12 py-[50px] md:py-[80px]">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-6 md:gap-10">
@@ -20,7 +20,7 @@ export default function VisionMission() {
           <div className="flex flex-col gap-4">
             <div className="flex items-start gap-3">
               <img src={Infinity} alt="infinity" className="w-5 h-5 mt-1" />
-              <p className="leading-relaxed text-gray-700 text-justify">
+              <p className="leading-relaxed text-gray-700 text-left">
                 Creating niche spaces that establish an emotionally strong
                 connection among the dwellers/owners. Concepts that create
                 benchmarks in the lifestyle-driven realty segment.
@@ -54,4 +54,5 @@ export default function VisionMission() {
       </div>
     </section>
   );
-}
+};
+export default VisionAndMission;

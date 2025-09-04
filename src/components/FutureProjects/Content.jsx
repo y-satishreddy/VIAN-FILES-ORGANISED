@@ -1,4 +1,4 @@
-const ProjectStats = () => (
+const Content = () => (
   <div className="bg-white flex justify-center md:px-10 px-5 py-[50px] md:py-[80px]">
     <div className="w-full max-w-7xl h-auto flex flex-col justify-center mx-auto">
       <div className="max-w-3xl">
@@ -31,4 +31,4 @@ const ProjectStats = () => (
     </div>
   </div>
 );
-export default ProjectStats;
+export default Content;

@@ -1,7 +1,5 @@
-import React from "react";
-import MobileTimeline from "./MobileTimeline";
 import DesktopTimeline from "./DesktopTimeline";
-
+import MobileTimeline from "./MobileTimeline";
 const Timeline = () => {
   return (
     <>

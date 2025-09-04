@@ -1,4 +1,4 @@
-export default function VianCentral() {
+const VianCentral = () => {
   return (
     <div className="bg-[#F0F0F0] flex justify-center  md:px-10 px-5">
       <div className="w-full max-w-7xl h-[400px] flex items-center mx-auto">
@@ -13,4 +13,5 @@ export default function VianCentral() {
       </div>
     </div>
   );
-}
+};
+export default VianCentral;

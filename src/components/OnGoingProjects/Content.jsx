@@ -1,32 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
-const ProjectOverview = () => (
+const Content = () => (
   <div className="bg-white flex justify-center md:px-10 px-5 py-[50px] md:py-[80px]">
-    {/* Fixed-width & fixed-height container */}
     <div className="w-full max-w-7xl h-auto  flex flex-col justify-center mx-auto">
       <div className="max-w-3xl">
-        {/* Top Row: Tower, Residences, Floors */}
         <div className="flex flex-wrap md:flex-nowrap justify-start items-start gap-10 md:gap-60 mb-8">
-          {/* Iconic Tower */}
           <div>
             <div className="text-red-600 text-3xl font-semibold">1</div>
             <div className="mt-1 text-gray-700 text-base">Iconic Tower</div>
           </div>
-
-          {/* BHK Residences */}
           <div>
             <div className="text-orange-500 text-3xl font-bold">2 &amp; 3</div>
             <div className="mt-1 text-gray-700 text-base">BHK Residences</div>
           </div>
-
-          {/* Floors */}
           <div>
             <div className="text-red-600 text-3xl font-semibold">G+32</div>
             <div className="mt-1 text-gray-700 text-base">Floors</div>
           </div>
         </div>
-
-        {/* Description Text */}
         <div>
           <p className=" leading-relaxed mb-4 text-justify md:text-left w-full md:w-[600px]">
             Spread across 2.62 acres in Kolluru, Vian Mrida offers 358 premium
@@ -46,7 +35,6 @@ const ProjectOverview = () => (
           </p>
         </div>
         <br />
-        {/* Button */}
         <div className="mt-6">
           <a
             href="https://vianmrida.in/"
@@ -61,4 +49,4 @@ const ProjectOverview = () => (
   </div>
 );
 
-export default ProjectOverview;
+export default Content;

@@ -1,10 +1,9 @@
-import React from "react";
-import TrustImg from "../../../assets/home/whyChooseUs/trust.svg";
-import QualityImg from "../../../assets/home/whyChooseUs/quality.svg";
-import DocumentationImg from "../../../assets/home/whyChooseUs/documentation.svg";
 import CustomerImg from "../../../assets/home/whyChooseUs/customer.svg";
+import DocumentationImg from "../../../assets/home/whyChooseUs/documentation.svg";
 import LegacyImg from "../../../assets/home/whyChooseUs/emerging.svg";
-const WhyChooseUs = () => {
+import QualityImg from "../../../assets/home/whyChooseUs/quality.svg";
+import TrustImg from "../../../assets/home/whyChooseUs/trust.svg";
+const DesktopVersionWhyChooseUs = () => {
   return (
     <section className="px-4 md:px-10 pt-[80px] bg-white w-full">
       <div className="max-w-7xl mx-auto px-20">
@@ -49,4 +48,4 @@ const WhyChooseUs = () => {
     </section>
   );
 };
-export default WhyChooseUs;
+export default DesktopVersionWhyChooseUs;

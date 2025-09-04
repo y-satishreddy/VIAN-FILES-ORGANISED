@@ -82,25 +82,25 @@ const Form = () => {
   return (
     <section className="w-full flex justify-center items-center py-[50px] px-5 md:px-10 md:py-[80px] pt-[0px] md:pt-[0px]">
       <div className="w-full max-w-md mx-auto flex flex-col items-center">
-        <h1 className="text-[#F44336] font-bold text-2xl md:text-3xl text-center pb-[20px]">
+        <h1 className="text-[#F44336] font-bold text-2xl md:text-3xl text-center pb-[30px]">
           Got a query? <br /> Talk to us.
         </h1>
         <form
           className="w-full flex flex-col items-center"
           onSubmit={handleSubmit}
         >
-          <div className="w-full mb-4">
+          <div className="w-full">
             <input
               type="text"
               name="name"
               placeholder="Name*"
               value={formData.name}
               onChange={handleChange}
-              className="w-full bg-transparent border-b-1 border-[#F47920] text-gray-700 text-center py-1 focus:outline-none"
+              className="w-full bg-transparent border-b-1 border-[#F47920] text-gray-700 text-center focus:outline-none"
               style={{ borderRadius: 0 }}
               required
             />
-            <div className="min-h-[20px]">
+            <div className="min-h-[20px] mt-[5px]">
               {errors.name && (
                 <p className="text-color-red font-size-12px text-center">
                   {errors.name}
@@ -108,7 +108,7 @@ const Form = () => {
               )}
             </div>
           </div>
-          <div className="w-full mb-4">
+          <div className="w-full ">
             <input
               type="text"
               name="phone"
@@ -116,11 +116,11 @@ const Form = () => {
               value={formData.phone}
               onChange={handleChange}
               maxLength="10"
-              className="w-full bg-transparent border-b-1 border-[#F47920] text-gray-700 text-center py-1 focus:outline-none"
+              className="w-full bg-transparent border-b-1 border-[#F47920] text-gray-700 text-center focus:outline-none"
               style={{ borderRadius: 0 }}
               required
             />
-            <div className="min-h-[20px]">
+            <div className="min-h-[20px] mt-[5px]">
               {errors.phone && (
                 <p className="text-color-red font-size-12px text-center">
                   {errors.phone}
@@ -128,18 +128,18 @@ const Form = () => {
               )}
             </div>
           </div>
-          <div className="w-full mb-4">
+          <div className="w-full">
             <input
               type="email"
               name="email"
               placeholder="Email*"
               value={formData.email}
               onChange={handleChange}
-              className="w-full bg-transparent border-b-1 border-[#F47920] text-gray-700 text-center py-1 focus:outline-none"
+              className="w-full bg-transparent border-b-1 border-[#F47920] text-gray-700 text-center focus:outline-none"
               style={{ borderRadius: 0 }}
               required
             />
-            <div className="min-h-[20px]">
+            <div className="min-h-[20px] mt-[5px]">
               {errors.email && (
                 <p className="text-color-red font-size-12px text-center">
                   {errors.email}
@@ -147,14 +147,15 @@ const Form = () => {
               )}
             </div>
           </div>
-          <div className="w-full mb-4">
+          <div className="w-full ">
             <textarea
               name="message"
               placeholder="Message"
               value={formData.message}
               onChange={handleChange}
-              className="w-full bg-transparent border-b-1 border-[#F47920] text-gray-700 text-center py-2 focus:outline-none"
+              className="w-full bg-transparent border-b-1 border-[#F47920] text-gray-700 text-center focus:outline-none"
               style={{ borderRadius: 0 }}
+              maxLength={150}
             />
           </div>
           <button
