@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Pagination, Autoplay, EffectFade } from "swiper/modules";
 import "./leadership.css";
-import LeadershipImage from "../../../assets/aboutUs/Leadership.png";
+import LeadershipImage from "../../../assets/aboutUs/leadership.png";
 
 export default function LeadershipCarousel() {
   const leaders = [

@@ -7,6 +7,8 @@ import OnGoingProjects from "./pages/OnGoingProjects";
 import FutureProjects from "./pages/FutureProjects";
 import ContactUs from "./pages/ContactUs";
 import ScrollToTop from "./pages/ScrollToTop";
+import TermsOfUse from "./pages/TermsOfUse";
+import Privacy from "./pages/Privacy";
 function App() {
   return (
     <>
@@ -21,6 +23,8 @@ function App() {
         <Route path="/ongoing-projects" element={<OnGoingProjects />}></Route>
         <Route path="/future-projects" element={<FutureProjects />}></Route>
         <Route path="/contact" element={<ContactUs />}></Route>
+        <Route path="/terms-of-use" element={<TermsOfUse />}></Route>
+        <Route path="/privacy" element={<Privacy />}></Route>
       </Routes>
     </>
   );

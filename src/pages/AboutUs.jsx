@@ -1,10 +1,9 @@
-import React from "react";
 import Banner from "../components/AboutUs/Banner/Banner";
-import VisionMission from "../components/AboutUs/VisionAndMission/VisionAndMission";
-import Values from "../components/AboutUs/Values/Values";
+import VisionMission from "../components/AboutUs/VisionAndMission";
+import Values from "../components/AboutUs/Values";
 import Leadership from "../components/AboutUs/Leadership/Leadership";
 import Footer from "../components/Footer/Footer";
-import Maps from "../components/ContactUs/Maps/Maps";
+
 const AboutUs = () => {
   return (
     <>

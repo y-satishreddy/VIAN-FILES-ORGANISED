@@ -4,7 +4,6 @@ import QualityImg from "../../../assets/home/whyChooseUs/quality.svg";
 import DocumentationImg from "../../../assets/home/whyChooseUs/documentation.svg";
 import CustomerImg from "../../../assets/home/whyChooseUs/customer.svg";
 import LegacyImg from "../../../assets/home/whyChooseUs/emerging.svg";
-
 const WhyChooseUs = () => {
   return (
     <section className="px-4 md:px-10 pt-[80px] bg-white w-full">
@@ -12,8 +11,6 @@ const WhyChooseUs = () => {
         <h1 className="font-bold text-center text-red-600 pb-[50px]">
           Why Choose Us?
         </h1>
-
-        {/* First Row - 3 features */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 text-center mb-12 px-[7px]">
           <div className="flex flex-col items-center space-y-1">
             <img src={TrustImg} alt="Trust" />
@@ -34,8 +31,6 @@ const WhyChooseUs = () => {
             </p>
           </div>
         </div>
-
-        {/* Second Row - 2 features, centered */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 text-center max-w-3xl mx-auto px-[50px]">
           <div className="flex flex-col items-center space-y-1">
             <img src={CustomerImg} alt="Customer" />
@@ -54,5 +49,4 @@ const WhyChooseUs = () => {
     </section>
   );
 };
-
 export default WhyChooseUs;

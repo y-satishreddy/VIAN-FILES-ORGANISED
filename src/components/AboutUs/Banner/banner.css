@@ -1,31 +1,30 @@
 .banner {
   background-image: url("../../../assets/aboutUs/banner.jpg");
-  background-size: cover; /* always covers full area */
-  background-position: center; /* centers image focus */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  /* upper limit for desktops */
-  width: 100%; /* shrink on mobiles & tablets */
-  margin: 0 auto; /* center on large screens */
-  height: 100vh; /* full viewport height */
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
 }
 .banner-text {
   position: absolute;
-  bottom: 22vh; /* adjust this value to move above buildings */
+  bottom: 22vh;
   left: 50%;
   top: 25%;
   transform: translateX(-50%);
-  color: #e53935; /* red */
+  color: #e53935;
   text-align: center;
   white-space: nowrap;
 }
 @media (min-width: 768px) {
   .banner-text {
-    bottom: 24vh; /* moves up a bit more on medium screens */
+    bottom: 24vh;
   }
 }
 @media (min-width: 1024px) {
   .banner-text {
-    bottom: 26vh; /* moves up further on large screens */
+    bottom: 26vh;
   }
 }

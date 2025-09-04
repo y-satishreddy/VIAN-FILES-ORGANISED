@@ -1,20 +1,16 @@
 .footer-gradient {
-  /* Desktop gradient */
   background: linear-gradient(
     90deg,
     rgba(199, 200, 202, 1) 0%,
     rgba(99, 100, 102, 1) 100%
   );
 }
-
-/* Mobile devices (up to 768px) */
 @media (max-width: 768px) {
   .footer-gradient {
     background: linear-gradient(
       90deg,
       rgba(150, 151, 152, 1) 0%,
-      /* lighter gray reduced */ rgba(99, 100, 102, 1) 100%
-        /* darker gray stronger */
+      rgba(99, 100, 102, 1) 100%
     );
   }
 }

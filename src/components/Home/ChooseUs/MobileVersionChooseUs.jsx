@@ -1,10 +1,8 @@
-import React from "react";
-import TrustImg from "../../../assets/home/whyChooseUs/trust.svg";
-import QualityImg from "../../../assets/home/whyChooseUs/quality.svg";
-import DocumentationImg from "../../../assets/home/whyChooseUs/documentation.svg";
 import CustomerImg from "../../../assets/home/whyChooseUs/customer.svg";
+import DocumentationImg from "../../../assets/home/whyChooseUs/documentation.svg";
 import LegacyImg from "../../../assets/home/whyChooseUs/emerging.svg";
-
+import QualityImg from "../../../assets/home/whyChooseUs/quality.svg";
+import TrustImg from "../../../assets/home/whyChooseUs/trust.svg";
 const WhyChooseUsMobile = () => {
   const features = [
     {
@@ -48,15 +46,12 @@ const WhyChooseUsMobile = () => {
       ),
     },
   ];
-
   return (
     <section className="py-[50px] px-4 bg-white w-full md:hidden">
       <div className="max-w-xl mx-auto">
         <h1 className="text-xl font-bold text-center pb-[50px] text-red-600 mb-10">
           Why Choose Us?
         </h1>
-
-        {/* First two rows with 2 features each */}
         <div className="grid grid-cols-2 gap-8 text-center mb-8">
           {features.slice(0, 4).map((feature, index) => (
             <div key={index} className="flex flex-col items-center space-y-3">
@@ -65,8 +60,6 @@ const WhyChooseUsMobile = () => {
             </div>
           ))}
         </div>
-
-        {/* Last single feature centered */}
         <div className="flex justify-center">
           <div className="flex flex-col items-center space-y-3">
             <img src={features[4].img} alt="feature" />

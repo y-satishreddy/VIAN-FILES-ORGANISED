@@ -1,5 +1,5 @@
 .hero-contact-section {
-  background-image: url("../../../assets/contactUs/banner.jpg");
+  background-image: url("../../../assets/contactUs/contactUsBanner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,9 +8,8 @@
   justify-content: space-between;
 }
 
-/* Mobile-specific background */
 @media (max-width: 768px) {
   .hero-contact-section {
-    background-image: url("../../../assets/contactUsMobileBanner.jpg");
+    background-image: url("../../../assets/contactUs/contactUsMobileBanner.jpg");
   }
 }

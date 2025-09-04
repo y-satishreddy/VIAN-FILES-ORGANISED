@@ -1,6 +1,6 @@
 import React from "react";
-import Banner from "../components/FutureProjects/Banner/Banner";
-import Content from "../components/FutureProjects/Content/Content";
+import Banner from "../components/FutureProjects/Banner";
+import Content from "../components/FutureProjects/Content";
 import Footer from "../components/Footer/Footer";
 const FutureProjects = () => {
   return (

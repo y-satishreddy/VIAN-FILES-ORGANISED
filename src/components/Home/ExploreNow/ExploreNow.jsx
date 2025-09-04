@@ -1,7 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import BgImage from "../../../assets/home/bgExploreNow.jpg";
 import ExploreImage from "../../../assets/home/building.png";
-import BgImage from "../../../assets/home/Bg.jpg";
 
 const ExploreNow = () => {
   return (
@@ -10,7 +9,6 @@ const ExploreNow = () => {
       style={{ backgroundImage: `url(${BgImage})` }}
     >
       <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row gap-8 md:gap-0 items-stretch text-[#636466]">
-        {/* Left Content - 60% */}
         <div className="w-full md:w-3/5 flex flex-col justify-center gap-2  text-sm md:text-base leading-relaxed md:pr-8">
           <p>
             <b>Vian Properties</b> in Hyderabad is setting a new benchmark for
@@ -20,7 +18,6 @@ const ExploreNow = () => {
             those seeking more than just a home, this is the essence of a
             refined life.
           </p>
-
           <p>
             Beyond aesthetics, Vian Properties also represents a smart real
             estate investment. Located in one of Hyderabad’s most rapidly
@@ -29,12 +26,10 @@ const ExploreNow = () => {
             spaces, investing in these luxury apartments ensures both personal
             satisfaction and financial growth.
           </p>
-
           <p>
             Whether you’re a discerning homeowner or a strategic investor, Vian
             Properties is where future-ready living begins.
           </p>
-
           <Link
             to="/explore"
             className="inline-block px-8 py-1 border-2 border-[#f37820] text-[#f37820] text-sm md:text-base transition-colors duration-300 bg-orange-red-gradient hover:text-white w-fit"
@@ -42,8 +37,6 @@ const ExploreNow = () => {
             Explore Now
           </Link>
         </div>
-
-        {/* Right Image - 40% */}
         <div className="w-full md:w-2/5 flex items-end justify-center pb-4 md:pb-0">
           <img
             src={ExploreImage}

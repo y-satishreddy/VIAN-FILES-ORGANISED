@@ -1,10 +1,6 @@
-// Vian Central
-import React from "react";
-
 export default function VianCentral() {
   return (
     <div className="bg-[#F0F0F0] flex justify-center  md:px-10 px-5">
-      {/* Fixed-width & fixed-height container */}
       <div className="w-full max-w-7xl h-[400px] flex items-center mx-auto">
         <div className="max-w-xl">
           <h1 className="font-bold text-color-orange mb-4">Vian Central</h1>

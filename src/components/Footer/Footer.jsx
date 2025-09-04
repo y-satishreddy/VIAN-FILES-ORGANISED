@@ -1,12 +1,9 @@
-import React from "react";
-import { FaInstagram, FaYoutube, FaFacebook, FaLinkedin } from "react-icons/fa";
-
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="w-full bg-gradient-to-r from-[#C7C8CA] to-[#636466] text-white py-1 pt-[50px] md:pt-[80px] px-5 md:px-10 ">
-      {/* Top Section */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-stretch gap-3 mb-4 max-w-7xl mx-auto">
-        {/* Left: Address */}
         <div className="md:w-1/2 text-white">
           <p className=" text-white">VIAN PROPERTIES PRIVATE LIMITED</p>
           <p className=" leading-relaxed text-white">
@@ -18,47 +15,45 @@ const Footer = () => {
             Telangana – 500032
           </p>
         </div>
-
-        {/* Right: Contact */}
         <div className="md:w-1/2 flex flex-col items-start md:items-end text-left md:text-right">
           <div>
-            <p className=" text-white">
-              <b className="block mb-2">+91 97037 66066</b>
-              <b className="block mb-2">+91 40 4853 5666</b>
-              <span>hello@vianproperties.com</span>
+            <p className="text-white">
+              <a
+                href="tel:+919703766066"
+                className="block mb-2 font-bold  transition-colors duration-300"
+              >
+                +91 97037 66066
+              </a>
+              <a
+                href="tel:+914048535666"
+                className="block mb-2 font-bold transition-colors duration-300"
+              >
+                +91 40 4853 5666
+              </a>
+              <a
+                href="mailto:hello@vianproperties.com"
+                className="block transition-colors duration-300"
+              >
+                hello@vianproperties.com
+              </a>
             </p>
           </div>
-          {/* Social Icons */}
           <div className="flex justify-start md:justify-end mt-2 space-x-4 text-2xl text-white">
-            <a
-              href="#"
-              className="hover:text-gray-200 transition-colors duration-300 text-white"
-            >
+            <a href="#" className=" transition-colors duration-300">
               <FaInstagram />
             </a>
-            <a
-              href="#"
-              className="hover:text-gray-200 transition-colors duration-300 text-white"
-            >
+            <a href="#" className=" transition-colors duration-300">
               <FaYoutube />
             </a>
-            <a
-              href="#"
-              className="hover:text-gray-200 transition-colors duration-300 text-white"
-            >
+            <a href="#" className=" transition-colors duration-300">
               <FaFacebook />
             </a>
-            <a
-              href="#"
-              className="hover:text-gray-200 transition-colors duration-300 text-white"
-            >
+            <a href="#" className="transition-colors duration-300">
               <FaLinkedin />
             </a>
           </div>
         </div>
       </div>
-
-      {/* Map Section */}
       <div className="mb-4 w-full max-w-7xl mx-auto md:pt-[0px] pt-[20px]">
         <a
           href="https://www.google.com/maps/place/17.447,78.429"
@@ -77,35 +72,24 @@ const Footer = () => {
           ></iframe>
         </a>
       </div>
-
-      {/* Horizontal Line */}
-      {/* Horizontal Line */}
       <div className="h-px bg-white w-[200px] sm:w-[300px] md:w-[450px] lg:w-[550px] mx-auto mb-3"></div>
-
-      {/* Bottom Section */}
       <div className="text-center max-w-7xl mx-auto text-white">
         <p className="text-white">
           © 2025 Vianproperties |{" "}
-          <a
-            href="/privacy-policy"
-            className=" hover:text-gray-200 transition-colors duration-300 text-white"
-          >
+          <Link to="/privacy" className=" transition-colors duration-300">
             Privacy
-          </a>{" "}
-          |{" "}
-          <a
-            href="/terms-of-use"
-            className=" hover:text-gray-200 transition-colors duration-300 text-white"
-          >
+          </Link>
+          {" | "}
+          <Link to="/terms-of-use" className=" transition-colors duration-300">
             Terms of Use
-          </a>
+          </Link>
           <br />
           Designed and Developed by{" "}
           <a
-            href="https://www.whitethoughts.com"
+            href="https://whitethoughts.in/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray-200 transition-colors duration-300 text-white"
+            className="transition-colors duration-300"
           >
             White Thoughts & Branding
           </a>
@@ -114,5 +98,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;

@@ -1,17 +1,11 @@
-import React from "react";
-
 export default function Values() {
   return (
     <section className="w-full bg-white px-5 md:px-10 lg:px-12 pb-[50px] md:pb-[80px] pt-[0px]">
       <div className="max-w-7xl mx-auto">
-        {/* Title */}
         <h1 className="text-color-red mb-8 text-3xl md:text-4xl font-bold">
           Values
         </h1>
-
-        {/* Values Content */}
         <div className="space-y-6">
-          {/* Row 1 */}
           <div className="flex flex-col md:flex-row gap-6">
             <div className="flex-1">
               <p className="font-semibold text-color-orange mb-1">Passion:</p>
@@ -33,8 +27,6 @@ export default function Values() {
               </p>
             </div>
           </div>
-
-          {/* Row 2 */}
           <div className="flex flex-col md:flex-row gap-6">
             <div className="flex-1">
               <p className="font-semibold text-color-orange mb-1">
@@ -59,8 +51,6 @@ export default function Values() {
               </p>
             </div>
           </div>
-
-          {/* Row 3 */}
           <div className="flex flex-col md:flex-row gap-6">
             <div className="flex-1">
               <p className="font-semibold text-color-orange mb-1">Rightness:</p>
