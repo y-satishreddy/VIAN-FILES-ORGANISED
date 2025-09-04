@@ -4,7 +4,7 @@ import PosterImage from "../../assets/home/poster.png";
 import Navbar from "../Navbar/Navabar";
 const Banner = () => {
   return (
-    <section className="relative w-full h-screen bg-[#f0f0f0] overflow-hidden">
+    <section className="relative w-full h-[93vh] md:h-screen bg-[#f0f0f0] overflow-hidden">
       <div className="relative w-full h-full px-5 md:px-10">
         <video
           className="absolute inset-0 w-full h-full object-cover pointer-events-none"
