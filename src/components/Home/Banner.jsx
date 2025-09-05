@@ -14,10 +14,9 @@ const Banner = () => {
     };
     window.addEventListener("resize", handleResize);
 
-    // Play video on mount
     const video = videoRef.current;
     if (video) {
-      video.muted = true; // required for Safari
+      video.muted = true; 
       video.play().catch((err) => {
         console.log("Autoplay prevented:", err);
       });
@@ -31,9 +30,9 @@ const Banner = () => {
   return (
     <section className="relative w-full h-[93vh] md:h-screen bg-[#f0f0f0] overflow-hidden">
       <div className="relative w-full h-full px-5 md:px-10">
-        {/* Conditional video element */}
+      
         <video
-          key={videoSrc} // key ensures React re-renders the element when src changes
+          key={videoSrc} 
           ref={videoRef}
           src={videoSrc}
           autoPlay

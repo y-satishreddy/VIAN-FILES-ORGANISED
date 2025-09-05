@@ -1,6 +1,5 @@
-import React from "react";
-import MobileVersionChooseUs from "./MobileVersionChooseUs";
 import DesktopVersionChooseUs from "./DesktopVersionChooseUs";
+import MobileVersionChooseUs from "./MobileVersionChooseUs";
 const ChooseUs = () => {
   return (
     <>

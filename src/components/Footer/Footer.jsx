@@ -76,11 +76,17 @@ const Footer = () => {
       <div className="text-center max-w-7xl mx-auto text-white">
         <p className="text-white">
           © 2025 Vianproperties |{" "}
-          <Link to="/privacy" className=" transition-colors duration-300">
+          <Link
+            to="/privacy"
+            className=" transition-colors duration-300 hover:text-[orange]"
+          >
             Privacy
           </Link>
           {" | "}
-          <Link to="/terms" className=" transition-colors duration-300">
+          <Link
+            to="/terms"
+            className=" transition-colors duration-300 hover:text-[orange]"
+          >
             Terms of Use
           </Link>
           <br />
@@ -89,7 +95,7 @@ const Footer = () => {
             href="https://whitethoughts.in/"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-colors duration-300"
+            className="transition-colors duration-300 hover:text-[orange]"
           >
             White Thoughts & Branding
           </a>
